@@ -95,3 +95,7 @@ python main.py
 * Random Module
 * Command Line Interface
 * Git & GitHub
+
+## Author
+* Name:Srishti Maurya
+* Registration Number:26BAI10551
