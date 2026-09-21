@@ -88,6 +88,11 @@ The game should run successfully with:
 ```
 python main.py
 ```
+## Screenshots
+* MAIN MENU
+<img width="460" height="252" alt="image" src="https://github.com/user-attachments/assets/3edeaabf-2b26-4703-967d-fe096bdb7f11" />
+
+
 
 ## Technologies
 
