@@ -1,4 +1,4 @@
-# Word Scramble Challenge 🎮
+# Word Scramble Challenge 
 
 A simple **command-line Word Scramble Game** made with Python.
 
