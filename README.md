@@ -38,8 +38,8 @@ Word-Scramble-Game/
 Clone the repository:
 
 ```
-git clone <YOUR-GITHUB-REPOSITORY-URL>
-cd <PROJECT-FOLDER-NAME>
+git clone <https://github.com/srishtimaurya23/Word_scramble_Game>
+cd <Word_scramble_Game>
 ```
 
 Run the game:
