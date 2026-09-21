@@ -106,6 +106,7 @@ python main.py
 
 * Hard level
 <img width="468" height="867" alt="image" src="https://github.com/user-attachments/assets/975c1b9d-1e8f-4a8a-92e1-e1712b2fb0cd" />
+
 <img width="458" height="110" alt="image" src="https://github.com/user-attachments/assets/69fbca47-0f16-4435-bbc8-6d8a56b84b34" />
 
 * Result
