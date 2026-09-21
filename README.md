@@ -89,10 +89,23 @@ The game should run successfully with:
 python main.py
 ```
 ## Screenshots
-* MAIN MENU
+* Difficulty levels
 <img width="460" height="252" alt="image" src="https://github.com/user-attachments/assets/3edeaabf-2b26-4703-967d-fe096bdb7f11" />
-
-
+* Easy level
+<img width="467" height="839" alt="image" src="https://github.com/user-attachments/assets/f4ff2143-97d6-4385-a2b8-ae67b44dba50" />
+* Result
+<img width="468" height="404" alt="image" src="https://github.com/user-attachments/assets/efd27748-0dfc-4289-8c76-a65f3b904cd2" />
+* Medium level
+<img width="459" height="807" alt="image" src="https://github.com/user-attachments/assets/40879ded-80a4-467f-95f8-d4f5cce2f5b2" />
+* Result
+<img width="466" height="396" alt="image" src="https://github.com/user-attachments/assets/08bd36e5-aad4-4c0d-ad6e-4b88281c348d" />
+* Hard level
+<img width="468" height="867" alt="image" src="https://github.com/user-attachments/assets/975c1b9d-1e8f-4a8a-92e1-e1712b2fb0cd" />
+<img width="458" height="110" alt="image" src="https://github.com/user-attachments/assets/69fbca47-0f16-4435-bbc8-6d8a56b84b34" />
+* Result
+<img width="461" height="321" alt="image" src="https://github.com/user-attachments/assets/c90d552e-6ac3-4e0e-9892-e33e92430c62" />
+* Final result
+<img width="451" height="68" alt="image" src="https://github.com/user-attachments/assets/56a3d38e-8153-4154-b564-e7075801e985" />
 
 ## Technologies
 
