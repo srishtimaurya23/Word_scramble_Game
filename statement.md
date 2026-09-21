@@ -4,10 +4,10 @@ In order to improve their vocabulary and cognitive reflexes, students and casual
 # The project's scope
 A simple command-line Python program that assesses word unscrambling abilities at three different levels of difficulty, records scores, and gracefully handles invalid inputs
 # Aim for Users
-1.Students who want to expand their vocabulary and spelling.
-2.Casual players who take pleasure in short terminal puzzles
+* Students who want to expand their vocabulary and spelling.
+* Casual players who take pleasure in short terminal puzzles
 # High-Level Elements
-1.A word bank with three different levels of difficulty: easy, medium, and hard.
-2.A random algorithm for shuffling words.
-3.Attempt-tracking system (three attempts per word).
-4.Tracking sessions and assessing scores
+* A word bank with three different levels of difficulty: easy, medium, and hard.
+* A random algorithm for shuffling words.
+* Attempt-tracking system (three attempts per word).
+* Tracking sessions and assessing scores
