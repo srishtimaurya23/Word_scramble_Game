@@ -114,7 +114,8 @@ The following screenshots show the existing project running at different difficu
 <img width="467" height="839" alt="Easy level" src="https://github.com/user-attachments/assets/f4ff2143-97d6-4385-a2b8-ae67b44dba50" />
 
 ### Easy result
-<img width="468" height="404" alt="Easy result" src="https://github.com/user-attachments/assets/efd27748-0dfc-4283-8c76-a65f3b904cd2" />
+<img width="468" height="404" alt="Screenshot 2026-09-22 000010" src="https://github.com/user-attachments/assets/116ec6f8-45df-4976-914a-54aa5bdaf8b6" />
+
 
 ### Medium level
 <img width="459" height="807" alt="Medium level" src="https://github.com/user-attachments/assets/40879ded-80a4-467f-95f8-d4f5cce2f5b2" />
