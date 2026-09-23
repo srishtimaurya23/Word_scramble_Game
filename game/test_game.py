@@ -1,6 +1,6 @@
 from utils import scramble_word
 from word_bank import WORDS
-from input_handler import get_replay_choice
+from input_handler import is_valid_replay_choice
 
 
 def test_scramble_has_same_letters():
@@ -22,8 +22,9 @@ def test_each_level_has_enough_words():
 
 
 def test_replay_validation():
-    # The function is tested manually because it requires keyboard input.
-    assert get_replay_choice.__name__ == "get_replay_choice"
+    assert is_valid_replay_choice("y")
+    assert is_valid_replay_choice("n")
+    assert not is_valid_replay_choice("x")
 
 
 if __name__ == "__main__":

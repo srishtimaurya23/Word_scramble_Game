@@ -4,15 +4,15 @@ A simple **command-line Word Scramble Game** made with Python as a VITyarthi pro
 
 ## Overview
 
-The game selects five random words from a chosen difficulty level and scrambles their letters. The player gets three attempts for each word. A correct answer gives one point, and the score is displayed after the game.
+The game selects five random words from a chosen difficulty level and scrambles their letters. The player gets three attempts for each word. A correct answer gives one point. The score is displayed after each game, and the cumulative score is displayed when the player exits.
 
 ## Features
 
-- Easy, Medium, and Hard levels
+- Easy, Medium and Hard levels
 - 5 random words per game
 - 3 attempts for each word
 - Automatic answer checking
-- Score out of 5
+- Score out of 5 for each game
 - Cumulative score for multiple games
 - Input validation for difficulty and replay choices
 - Modular Python files
@@ -29,7 +29,7 @@ The game selects five random words from a chosen difficulty level and scrambles 
 
 - **Usability:** simple CLI prompts make the game easy to use.
 - **Performance:** words are stored in memory and processed quickly.
-- **Reliability:** invalid menu choices are handled without stopping the program.
+- **Reliability:** invalid menu and replay choices are handled through validation.
 - **Maintainability:** related functions are separated into modules.
 - **Resource Efficiency:** only Python standard-library features are used.
 - **Portability:** the program can run with Python 3.x.
@@ -55,6 +55,9 @@ Word-Scramble-Game/
 ├── test_game.py
 ├── statement.md
 ├── README.md
+├── PROJECT_REPORT.md
+├── docs/
+│   └── design.md
 └── .gitignore
 ```
 
@@ -101,11 +104,27 @@ The tests check:
 - scrambled words contain the same letters as the original word
 - all three difficulty levels exist
 - every level has at least five words
-- the replay validation function exists
+- replay validation accepts only `y` or `n`
+
+## Design Diagrams
+
+The following design diagrams are available in [`docs/design.md`](docs/design.md):
+
+- System Architecture Diagram
+- Workflow Diagram
+- Use Case Diagram
+- Sequence Diagram
+- Component/File Relationship Diagram
+
+A database is not used in this project, so an ER diagram is not applicable.
+
+## Project Report
+
+A report draft covering the VITyarthi requirements is available in [`PROJECT_REPORT.md`](PROJECT_REPORT.md). The final report can be exported to PDF for portal submission.
 
 ## Screenshots
 
-The following screenshots show the existing project running at different difficulty levels and results.
+The following screenshots show the project running at different difficulty levels and results.
 
 ### Difficulty levels
 <img width="460" height="252" alt="Difficulty levels" src="https://github.com/user-attachments/assets/3edeaabf-2b26-4703-967d-fe096bdb7f11" />
@@ -114,8 +133,7 @@ The following screenshots show the existing project running at different difficu
 <img width="467" height="839" alt="Easy level" src="https://github.com/user-attachments/assets/f4ff2143-97d6-4385-a2b8-ae67b44dba50" />
 
 ### Easy result
-<img width="468" height="404" alt="Screenshot 2026-09-22 000010" src="https://github.com/user-attachments/assets/116ec6f8-45df-4976-914a-54aa5bdaf8b6" />
-
+<img width="468" height="404" alt="Easy result" src="https://github.com/user-attachments/assets/116ec6f8-45df-4976-914a-54aa5bdaf8b6" />
 
 ### Medium level
 <img width="459" height="807" alt="Medium level" src="https://github.com/user-attachments/assets/40879ded-80a4-467f-95f8-d4f5cce2f5b2" />
@@ -124,7 +142,7 @@ The following screenshots show the existing project running at different difficu
 <img width="466" height="396" alt="Medium result" src="https://github.com/user-attachments/assets/08bd36e5-aad4-4c0d-ad6e-4b88281c348d" />
 
 ### Hard level
-<img width="468" height="867" alt="Hard level" src="https://github.com/user-attachments/assets/975c1b9d-1e8f-4a8a-92e1-e1712b2fb0cd" />
+<img width="468" height="867" alt="Hard level" src="https://github.com/user-attachments/assets/975c1b9d-1e8e-4435-bbc8-6d8a56b84b34" />
 
 ### Hard level continuation
 <img width="458" height="110" alt="Hard level continuation" src="https://github.com/user-attachments/assets/69fbca47-0f16-4435-bbc8-6d8a56b84b34" />
