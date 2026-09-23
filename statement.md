@@ -1,37 +1,81 @@
-# Problem Statement
+# Project Statement
 
-## Word Scramble Challenge
-
-### 1. Project Title
+## 1. Project Title
 
 **Word Scramble Challenge – A Python Command-Line Game**
 
-### 2. Problem Statement
+## 2. Problem Statement
 
 The objective of this project is to develop a simple command-line based **Word Scramble Game using Python**.
 
-In this game, the computer selects a word randomly from a predefined word bank and rearranges its letters. The player has to identify and enter the original word. The game provides different difficulty levels so that the player can choose words according to their level.
+The computer selects a word randomly from a predefined word bank and rearranges its letters. The player has to identify and enter the original word. The game provides different difficulty levels so that the player can choose words according to their level.
 
 The player gets **3 attempts for each word**. A correct answer increases the player's score by one. If the player is unable to guess the word within the given attempts, the correct answer is displayed.
 
-### 3. Objectives
+## 3. Scope of the Project
 
-The project is designed to practice the following Python programming concepts:
+The project is limited to a command-line interface. It includes word selection, word scrambling, user input, answer checking, attempt management, scoring, difficulty selection and replay.
 
-* Variables and data types
-* Lists and dictionaries
-* Strings and string operations
-* User input using `input()`
-* `if-elif-else` conditional statements
-* `for` and `while` loops
-* Functions
-* The `random` module
-* Basic program logic and problem solving
-* Using multiple Python files to organize a program
+The project does not use a database or external packages.
 
-### 4. Working of the Program
+## 4. Target Users
 
-The program follows these steps:
+- Students learning basic Python programming.
+- Beginners who want to practise programming through a small game.
+- Users who want a simple word-based command-line game.
+
+## 5. Objectives
+
+The project is designed to practise:
+
+- Variables and data types
+- Lists and dictionaries
+- Strings and string operations
+- User input using `input()`
+- `if-elif-else` statements
+- `for` and `while` loops
+- Functions
+- The `random` module
+- Basic program logic and problem solving
+- Multiple Python files and modular organization
+
+## 6. High-Level Features
+
+- Easy, Medium and Hard difficulty levels
+- 5 random words per game
+- 3 attempts for each word
+- Automatic answer checking
+- Score out of 5
+- Cumulative score for multiple games
+- Replay option
+- Input validation
+- Modular project structure
+- Basic validation tests
+
+## 7. Functional Modules
+
+### Word Management
+`word_bank.py` stores the word lists for Easy, Medium and Hard levels.
+
+### Game Logic
+`game_logic.py` selects five random words, scrambles them, manages attempts, checks answers and calculates the score.
+
+### User Interaction
+`utils.py` and `input_handler.py` display menus and receive validated user input.
+
+### Score Management
+`score_manager.py` displays the score for a game and the final cumulative result.
+
+## 8. Non-Functional Requirements
+
+- **Usability:** simple and clear command-line interaction.
+- **Performance:** quick word selection and answer checking.
+- **Reliability:** invalid menu inputs are handled through validation.
+- **Maintainability:** functions are divided across meaningful files.
+- **Resource Efficiency:** the game uses small in-memory word lists.
+- **Portability:** it uses Python standard-library functionality.
+
+## 9. Working of the Program
 
 1. Display the welcome message.
 2. Ask the player to select a difficulty level.
@@ -40,35 +84,11 @@ The program follows these steps:
 5. Display the scrambled word.
 6. Allow the player 3 attempts to guess the word.
 7. Increase the score when the answer is correct.
-8. Display the final score after all 5 words.
-9. Ask the player whether they want to play again.
+8. Display the score after all 5 words.
+9. Ask whether the player wants to play again.
+10. Display the cumulative result when the player exits.
 
-### 5. Difficulty Levels
-
-The game contains three categories:
-
-* **Easy:** Short and simple words.
-* **Medium:** Moderately difficult words.
-* **Hard:** Longer and more challenging words.
-
-Each category contains a list of words stored in `word_bank.py`.
-
-### 6. File Organization
-
-The project is divided into separate files:
-
-* **`main.py`** – Controls the execution of the program.
-* **`game_logic.py`** – Contains the main game functions and logic.
-* **`utils.py`** – Contains helper functions.
-* **`word_bank.py`** – Contains the word lists for different difficulty levels.
-
-### 7. Expected Output
-
-The program should provide an interactive game where the user can select a difficulty level, solve scrambled words, receive feedback, and see their final score.
-
-The project demonstrates the practical use of basic Python programming concepts to create a small, functional command-line application.
-
-### 8. Technology Used
+## 10. Technology Used
 
 **Programming Language:** Python 3
 

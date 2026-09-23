@@ -1,20 +1,44 @@
-# Word Scramble Challenge 
+# Word Scramble Challenge
 
-A simple **command-line Word Scramble Game** made with Python.
+A simple **command-line Word Scramble Game** made with Python as a VITyarthi project.
+
+## Overview
+
+The game selects five random words from a chosen difficulty level and scrambles their letters. The player gets three attempts for each word. A correct answer gives one point, and the score is displayed after the game.
 
 ## Features
 
-* Easy, Medium, and Hard levels
-* 5 random words per game
-* 3 attempts for each word
-* Score out of 5
-* Option to play again
+- Easy, Medium, and Hard levels
+- 5 random words per game
+- 3 attempts for each word
+- Automatic answer checking
+- Score out of 5
+- Cumulative score for multiple games
+- Input validation for difficulty and replay choices
+- Modular Python files
+- Basic validation tests
+
+## Functional Modules
+
+1. **Word Management** – `word_bank.py` stores words for each difficulty.
+2. **Game Logic** – `game_logic.py` controls word selection, attempts, answer checking and scoring.
+3. **User Interaction** – `utils.py` and `input_handler.py` handle menus and user input.
+4. **Score Management** – `score_manager.py` displays game and final results.
+
+## Non-Functional Requirements
+
+- **Usability:** simple CLI prompts make the game easy to use.
+- **Performance:** words are stored in memory and processed quickly.
+- **Reliability:** invalid menu choices are handled without stopping the program.
+- **Maintainability:** related functions are separated into modules.
+- **Resource Efficiency:** only Python standard-library features are used.
+- **Portability:** the program can run with Python 3.x.
 
 ## Requirements
 
-* Python 3.x
-* VS Code or any Python-supported editor
-* Git for GitHub submission
+- Python 3.x
+- VS Code or any Python-supported editor
+- Git for GitHub submission
 
 **No external packages are required.**
 
@@ -25,103 +49,100 @@ Word-Scramble-Game/
 ├── main.py
 ├── game_logic.py
 ├── utils.py
+├── input_handler.py
+├── score_manager.py
 ├── word_bank.py
+├── test_game.py
 ├── statement.md
 ├── README.md
-└── .gitattributes
+└── .gitignore
 ```
-
-`__pycache__` may be created automatically by Python and does not need to be uploaded to GitHub.
 
 ## Setup & Run
 
 Clone the repository:
 
-```
-git clone <https://github.com/srishtimaurya23/Word_scramble_Game>
-cd <Word_scramble_Game>
+```bash
+git clone https://github.com/srishtimaurya23/Word_scramble_Game.git
+cd Word_scramble_Game
 ```
 
 Run the game:
 
-```
+```bash
 python main.py
 ```
 
 On Windows, you can also use:
 
-```
+```bash
 py main.py
 ```
 
 ## How to Play
 
 1. Select a difficulty level.
-2. Guess the scrambled word.
-3. You get 3 attempts for each word.
-4. Solve 5 words and check your score.
-5. Choose whether to play again.
+2. A scrambled word is displayed.
+3. Enter your answer.
+4. You get 3 attempts for each word.
+5. Five words are played in one game.
+6. Check your score.
+7. Choose whether to play again.
 
-The word lists are stored in `word_bank.py`.
+## Testing
 
-## GitHub Submission
+Run:
 
-After making changes:
-
-```
-git add .
-git commit -m "Word Scramble Game"
-git push
+```bash
+python test_game.py
 ```
 
-Make sure the repository includes:
+The tests check:
+- scrambled words contain the same letters as the original word
+- all three difficulty levels exist
+- every level has at least five words
+- the replay validation function exists
 
-* `main.py`
-* `game_logic.py`
-* `utils.py`
-* `word_bank.py`
-* `statement.md`
-* `README.md`
-
-The game should run successfully with:
-
-```
-python main.py
-```
 ## Screenshots
-* Difficulty levels
-<img width="460" height="252" alt="image" src="https://github.com/user-attachments/assets/3edeaabf-2b26-4703-967d-fe096bdb7f11" />
 
-* Easy level
-<img width="467" height="839" alt="image" src="https://github.com/user-attachments/assets/f4ff2143-97d6-4385-a2b8-ae67b44dba50" />
+The following screenshots show the existing project running at different difficulty levels and results.
 
-* Result
-<img width="468" height="404" alt="image" src="https://github.com/user-attachments/assets/efd27748-0dfc-4289-8c76-a65f3b904cd2" />
+### Difficulty levels
+<img width="460" height="252" alt="Difficulty levels" src="https://github.com/user-attachments/assets/3edeaabf-2b26-4703-967d-fe096bdb7f11" />
 
-* Medium level
-<img width="459" height="807" alt="image" src="https://github.com/user-attachments/assets/40879ded-80a4-467f-95f8-d4f5cce2f5b2" />
+### Easy level
+<img width="467" height="839" alt="Easy level" src="https://github.com/user-attachments/assets/f4ff2143-97d6-4385-a2b8-ae67b44dba50" />
 
-* Result
-<img width="466" height="396" alt="image" src="https://github.com/user-attachments/assets/08bd36e5-aad4-4c0d-ad6e-4b88281c348d" />
+### Easy result
+<img width="468" height="404" alt="Screenshot 2026-09-22 000010" src="https://github.com/user-attachments/assets/116ec6f8-45df-4976-914a-54aa5bdaf8b6" />
 
-* Hard level
-<img width="468" height="867" alt="image" src="https://github.com/user-attachments/assets/975c1b9d-1e8f-4a8a-92e1-e1712b2fb0cd" />
 
-<img width="458" height="110" alt="image" src="https://github.com/user-attachments/assets/69fbca47-0f16-4435-bbc8-6d8a56b84b34" />
+### Medium level
+<img width="459" height="807" alt="Medium level" src="https://github.com/user-attachments/assets/40879ded-80a4-467f-95f8-d4f5cce2f5b2" />
 
-* Result
-<img width="461" height="321" alt="image" src="https://github.com/user-attachments/assets/c90d552e-6ac3-4e0e-9892-e33e92430c62" />
+### Medium result
+<img width="466" height="396" alt="Medium result" src="https://github.com/user-attachments/assets/08bd36e5-aad4-4c0d-ad6e-4b88281c348d" />
 
-* Final result
-<img width="451" height="68" alt="image" src="https://github.com/user-attachments/assets/56a3d38e-8153-4154-b564-e7075801e985" />
+### Hard level
+<img width="468" height="867" alt="Hard level" src="https://github.com/user-attachments/assets/975c1b9d-1e8f-4a8a-92e1-e1712b2fb0cd" />
+
+### Hard level continuation
+<img width="458" height="110" alt="Hard level continuation" src="https://github.com/user-attachments/assets/69fbca47-0f16-4435-bbc8-6d8a56b84b34" />
+
+### Hard result
+<img width="461" height="321" alt="Hard result" src="https://github.com/user-attachments/assets/c90d552e-6ac3-4e0e-9892-e33e92430c62" />
+
+### Final result
+<img width="451" height="68" alt="Final result" src="https://github.com/user-attachments/assets/56a3d38e-8153-4154-b564-e7075801e985" />
 
 ## Technologies
 
-* Python 3
-* Random Module
-* Command Line Interface
-* Git & GitHub
+- Python 3
+- `random` module
+- Command Line Interface
+- Git & GitHub
 
 ## Author
-* Name:Srishti Maurya
-* Registration Number:26BAI10551
+
+- **Name:** Srishti Maurya
+- **Registration Number:** 26BAI10551
