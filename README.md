@@ -148,7 +148,7 @@ The following screenshots show the project running at different difficulty level
 <img width="458" height="110" alt="Hard level continuation" src="https://github.com/user-attachments/assets/69fbca47-0f16-4435-bbc8-6d8a56b84b34" />
 
 ### Hard result
-<img width="461" height="321" alt="Hard result" src="https://github.com/user-attachments/assets/c90d552e-6ac3-4e0e-9892-e33e92430c62" />
+<img width="461" height="321" alt="Screenshot 2026-09-22 000255" src="https://github.com/user-attachments/assets/2ae558fc-2b32-415f-8eb1-b26a193acb85" />
 
 ### Final result
 <img width="451" height="68" alt="Final result" src="https://github.com/user-attachments/assets/56a3d38e-8153-4154-b564-e7075801e985" />
