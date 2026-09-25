@@ -7,7 +7,6 @@ def scramble_word(word):
         scrambled = "".join(letters)
         if scrambled != word:
             return scrambled
-
 def choose_difficulty():
     """Displays difficulty menu and returns user choice."""
     print("\nChoose Difficulty")
