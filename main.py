@@ -2,6 +2,7 @@ from game_logic import play_game
 from input_handler import get_replay_choice
 from score_manager import show_final_result
 def main():
+    #calculates the total score and number of games played, and asks the player if they want to play again.
     total_score=0
     games_played=0
     print("=" * 50)

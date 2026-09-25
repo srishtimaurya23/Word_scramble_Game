@@ -4,7 +4,7 @@ from utils import scramble_word, choose_difficulty
 from input_handler import get_answer
 from score_manager import show_game_result
 def play_game():
-    #Executes a single Word Scramble game.
+    #choose a difficulty level and select 5 random words from the word bank.
     difficulty=choose_difficulty()
     selected_words=random.sample(WORDS[difficulty],5)
     score=0
