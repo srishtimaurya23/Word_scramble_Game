@@ -5,7 +5,6 @@ def show_game_result(difficulty, score):
     print("=" * 50)
     print("Difficulty:", difficulty.upper())
     print("Score:", score, "/ 5")
-
     if score == 5:
         print("Perfect Score!")
     elif score >= 3:
@@ -14,8 +13,6 @@ def show_game_result(difficulty, score):
         print("Good try!")
     else:
         print("Keep practicing!")
-
-
 def show_final_result(games_played, total_score):
     """Display the cumulative result when the player exits."""
     print("\n" + "=" * 50)
