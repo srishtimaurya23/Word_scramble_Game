@@ -1,6 +1,5 @@
 import random
 def scramble_word(word):
-    #Scrambles the letters of a word ensuring it doesn't match the original.
     letters=list(word)
     while True:
         random.shuffle(letters)
@@ -8,7 +7,6 @@ def scramble_word(word):
         if scrambled!=word:
             return scrambled
 def choose_difficulty():
-    #Displays difficulty menu and returns user choice.
     print("\nChoose Difficulty")
     print("1. Easy")
     print("2. Medium")

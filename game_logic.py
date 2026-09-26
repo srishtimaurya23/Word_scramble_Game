@@ -1,10 +1,9 @@
 import random
 from word_bank import WORDS
-from utils import scramble_word, choose_difficulty
-from input_handler import get_answer
-from score_manager import show_game_result
-def play_game():
-    #choose a difficulty level and select 5 random words from the word bank.
+from utils import scramble_word,choose_difficulty
+from input_handler import answer
+from score_manager import gameresult
+def playgame():
     difficulty=choose_difficulty()
     selected_words=random.sample(WORDS[difficulty],5)
     score=0
@@ -21,7 +20,7 @@ def play_game():
         print("Word", number,"of 5")
         print("Scrambled word:",scrambled)
         while attempts_left > 0:
-            guess=get_answer()
+            guess=answer()
             if guess==word:
                 print("Correct!")
                 score+=1
@@ -32,5 +31,5 @@ def play_game():
             else:
                 print("Wrong answer!")
                 print("The correct word was:",word)
-    show_game_result(difficulty,score)
+    gameresult(difficulty,score)
     return score

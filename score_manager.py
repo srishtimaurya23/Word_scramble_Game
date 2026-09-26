@@ -1,5 +1,4 @@
-def show_game_result(difficulty,score):
-    #Display the result of one game.
+def gameresult(difficulty,score):
     print("\n" + "=" * 50)
     print("                 RESULTS")
     print("=" * 50)
@@ -13,11 +12,10 @@ def show_game_result(difficulty,score):
         print("Good try!")
     else:
         print("Keep practicing!")
-def show_final_result(games_played,total_score):
-    #Display the cumulative result when the player exits.
+def finalresult(gamesplayed,totalscore):
     print("\n" + "=" * 50)
     print("             GAME OVER")
     print("=" * 50)
-    print("Total Games Played:",games_played)
-    print("Final Cumulative Score:",total_score)
+    print("Total Games Played:",gamesplayed)
+    print("Final Cumulative Score:",totalscore)
     print("Thanks for playing!")
