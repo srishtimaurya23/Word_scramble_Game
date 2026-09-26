@@ -1,99 +1,120 @@
-# Project Statement
+## Project Overview
+* Project Title Word Scramble Challenge – Command Line Game in Python
 
-## 1. Project Title
+# Description of the problem
 
-**Word Scramble Challenge – A Python Command-Line Game**
+* The aim of this project is to create a simple Word Scramble Game using Python that can be run from the command line.
+* The computer picks a word at random from a pre-defined word bank and jumbles the letters. The player must identify and enter the original word. The game has different levels of difficulty so that the player can select words according to their level.
+* The player has 3 tries per word. The score goes up by one every time a question is answered correctly. If the player fails to guess the word within the given tries, the correct answer is revealed.
 
-## 2. Problem Statement
+# Project Scope
 
-The objective of this project is to develop a simple command-line based **Word Scramble Game using Python**.
+The project is restricted to the command line interface. It consists of word selection, word scrambling, user input, answer checking, attempt handling, scoring, difficulty selection and repeat.
 
-The computer selects a word randomly from a predefined word bank and rearranges its letters. The player has to identify and enter the original word. The game provides different difficulty levels so that the player can choose words according to their level.
+The project does not use any database or third party packages.
 
-The player gets **3 attempts for each word**. A correct answer increases the player's score by one. If the player is unable to guess the word within the given attempts, the correct answer is displayed.
+# Intended Users
 
-## 3. Scope of the Project
+Students learning basic programming in Python.
 
-The project is limited to a command-line interface. It includes word selection, word scrambling, user input, answer checking, attempt management, scoring, difficulty selection and replay.
+For beginners who want to practice programming through a small game.
 
-The project does not use a database or external packages.
+Users who want a simple command-line word game.
 
-## 4. Target Users
+# Purposes
 
-- Students learning basic Python programming.
-- Beginners who want to practise programming through a small game.
-- Users who want a simple word-based command-line game.
+The project is intended to practice:
 
-## 5. Objectives
+Variables & Data Types
 
-The project is designed to practise:
+Lists and dictionaries.
 
-- Variables and data types
-- Lists and dictionaries
-- Strings and string operations
-- User input using `input()`
-- `if-elif-else` statements
-- `for` and `while` loops
-- Functions
-- The `random` module
-- Basic program logic and problem solving
-- Multiple Python files and modular organization
+Strings and string manipulation
 
-## 6. High-Level Features
+if-elif-else statements using input() for and while loop
 
-- Easy, Medium and Hard difficulty levels
-- 5 random words per game
-- 3 attempts for each word
-- Automatic answer checking
-- Score out of 5
-- Cumulative score for multiple games
-- Replay option
-- Input validation
-- Modular project structure
-- Basic validation tests
+Features
 
-## 7. Functional Modules
+Random Module
 
-### Word Management
-`word_bank.py` stores the word lists for Easy, Medium and Hard levels.
+Basic program logic and problem solving
 
-### Game Logic
-`game_logic.py` selects five random words, scrambles them, manages attempts, checks answers and calculates the score.
+Several Python files and modular organization
 
-### User Interaction
-`utils.py` and `input_handler.py` display menus and receive validated user input.
+# High level features
 
-### Score Management
-`score_manager.py` displays the score for a game and the final cumulative result.
+Difficulty levels Easy, Medium and Hard
 
-## 8. Non-Functional Requirements
+5 random words each game
 
-- **Usability:** simple and clear command-line interaction.
-- **Performance:** quick word selection and answer checking.
-- **Reliability:** invalid menu inputs are handled through validation.
-- **Maintainability:** functions are divided across meaningful files.
-- **Resource Efficiency:** the game uses small in-memory word lists.
-- **Portability:** it uses Python standard-library functionality.
+3 tries for each word
 
-## 9. Working of the Program
+Automatic check answer
 
-1. Display the welcome message.
-2. Ask the player to select a difficulty level.
-3. Select 5 random words from the selected difficulty.
-4. Scramble the letters of each word.
-5. Display the scrambled word.
-6. Allow the player 3 attempts to guess the word.
-7. Increase the score when the answer is correct.
-8. Display the score after all 5 words.
-9. Ask whether the player wants to play again.
-10. Display the cumulative result when the player exits.
+Rating: 5 out of 5
 
-## 10. Technology Used
+The total of points scored across multiple games
 
-**Programming Language:** Python 3
+Replay Feature
 
-**Module Used:** `random`
+Input Verification
 
-**Interface:** Command Line Interface (CLI)
+Module-based project structure
 
-**Version Control:** Git and GitHub
+Simple validation tests.
+
+# Functional Units
+
+Management of words
+
+word_bank.py contains the word lists for the Easy, Medium and Hard levels.
+
+Game Logic game_logic.py selects 5 random words, scrambles them, manages attempts, checks answers and calculates the score.
+
+User Interaction Menus are displayed and validated user input is received in utils.py and input_handler.py.
+
+Score Management score_manager.py shows the score of a game and the final cumulative result.
+
+# Requirements that are not functional
+
+Usability: simple and clear command line interaction.
+
+Performance: rapid selection of words and checking of answers.
+
+Reliability: invalid menu options are validated.
+
+Maintainability: functionality is separated in meaningful files.
+
+Resource Efficiency: The game utilizes small in-memory word lists.
+
+Portability: It uses standard-library functionality in Python.
+
+# Program Working
+
+print("Welcome!")
+
+Pick your poison, player.
+
+Pick 5 random words from the chosen difficulty.
+
+Rearrange the characters of every expression.
+
+Unjumble the word.
+
+Player can guess the word 3 times.
+
+Raise the score when the answer is correct.
+
+Display the score after all 5 words.
+
+Ask the player if he wants to play again.
+
+Show the cumulative result when the player exits.
+
+# Technology Used
+
+Programming Language: Python 3
+
+Module Used: random
+
+Interface: Command Line Interface (CLI)
