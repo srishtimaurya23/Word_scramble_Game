@@ -1,11 +1,8 @@
 import random
 def scramble_word(word):
-    letters=list(word)
-    while True:
-        random.shuffle(letters)
-        scrambled= "".join(letters)
-        if scrambled!=word:
-            return scrambled
+    word_list=list(word)
+    random.shuffle(word_list)
+    return ''.join(word_list)
 def choose_difficulty():
     print("\nChoose Difficulty")
     print("1. Easy")

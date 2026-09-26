@@ -2,9 +2,9 @@ from utils import scramble_word
 from word_bank import WORDS
 from input_handler import validchoice
 def testletters():
-    word="garden"
-    scrambled=scramble_word(word)
-    assert sorted(word)==sorted(scrambled)
+    test_word="example"
+    scrambled=scramble_word(test_word)
+    assert sorted(scrambled)==sorted(test_word)
 def testlevels():
     assert "easy" in WORDS
     assert "medium" in WORDS
