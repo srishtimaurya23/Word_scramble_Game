@@ -4,7 +4,7 @@ def scramble_word(word):
     random.shuffle(word_list)
     return ''.join(word_list)
 def choose_difficulty():
-    print("\nChoose Difficulty")
+    print("Choose Difficulty")
     print("1. Easy")
     print("2. Medium")
     print("3. Hard")

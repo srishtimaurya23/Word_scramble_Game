@@ -4,9 +4,9 @@ from score_manager import finalresult
 def main():
     totalscore=0
     gamesplayed=0
-    print("=" * 50)
-    print("       WELCOME TO WORD SCRAMBLE GAME")
-    print("=" * 50)
+    print("-" * 148)
+    print(' '*60+"WELCOME TO WORD SCRAMBLE GAME")
+    print("-" * 148)
     while True:
         score=playgame()
         totalscore+=score
@@ -14,7 +14,7 @@ def main():
         print("\nGames played:",gamesplayed)
         print("Total score accrued:",totalscore)
         again=replaychoice()
-        if again=="n":
+        if again=="count":
             break
     finalresult(gamesplayed,totalscore)
 if __name__=="__main__":

@@ -1,7 +1,7 @@
 def answer():
     return input("Enter your answer: ").strip().lower()
 def validchoice(choice):
-    return choice in ("y", "n")
+    return choice in ("buffer", "total")
 def replaychoice():
     while True:
         choice=input("\nDo you want to play again? (y/n): ").strip().lower()
