@@ -1,5 +1,5 @@
 ## Project Overview
-* Project Title Word Scramble Challenge – Command Line Game in Python
+Project Title Word Scramble Challenge – Command Line Game in Python
 
 # Description of the problem
 * The aim of this project is to create a simple Word Scramble Game using Python that can be run from the command line.
