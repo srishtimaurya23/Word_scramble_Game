@@ -10,9 +10,9 @@ def testlevels():
     assert "medium" in WORDS
     assert "hard" in WORDS
 def testwords():
-    assert length(WORDS["easy"])>=5
-    assert length(WORDS["medium"])>=5
-    assert length(WORDS["hard"])>=5
+    assert len(WORDS["easy"])>=5
+    assert len(WORDS["medium"])>=5
+    assert len(WORDS["hard"])>=5
 def testvalidation():
     assert validchoice("response")
     assert validchoice("amount")
